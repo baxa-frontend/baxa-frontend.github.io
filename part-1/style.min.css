@@ -1,0 +1,234 @@
+#footer-top {
+  width: 100%;
+  height: 100%;
+  background: #4cb1ca; }
+  #footer-top .col-md-6 {
+    display: -ms-flexbox;
+    display: flex; }
+    #footer-top .col-md-6 h2 {
+      font-size: 21px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: auto 0; }
+    #footer-top .col-md-6 i {
+      background: #fff;
+      color: #4cb1ca;
+      font-size: 35px;
+      border-radius: 50%;
+      padding: 18px 19px;
+      margin: 20px 20px 20px 0; }
+
+#header .top-menu .navbar {
+  padding: 0;
+  font-size: 13px; }
+  #header .top-menu .navbar .navbar-nav .language {
+    padding: 8px;
+    color: #bff2ff; }
+  #header .top-menu .navbar .navbar-nav .nav-item a {
+    color: #fff; }
+  #header .top-menu .navbar .navbar-nav .nav-item .dropdown-item {
+    color: #000; }
+
+#header .menu .navbar .navbar-brand {
+  font-size: 36px;
+  color: #656565;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 59px; }
+  @media screen and (max-width: 1200px) {
+    #header .menu .navbar .navbar-brand {
+      margin-right: 0; } }
+
+#header .menu .navbar .navbar-nav .nav-item {
+  padding-right: 12px; }
+  #header .menu .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    color: #656565;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+@media screen and (max-width: 1200px) {
+  #header .menu .navbar .form-inline {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
+
+#header .menu .navbar .icons {
+  margin: 0 14px; }
+  #header .menu .navbar .icons i {
+    background: #7db122;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    padding: 9px; }
+    #header .menu .navbar .icons i:hover {
+      background: #4cb1ca; }
+
+#header .menu .navbar .cart {
+  padding-top: 20px; }
+
+#header .banner {
+  width: 100%; }
+  #header .banner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+  #header .banner .carousel-item .carousel-caption {
+    width: 100%;
+    text-align: left;
+    bottom: 40%;
+    padding: 0; }
+    #header .banner .carousel-item .carousel-caption h1 {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: #fff; }
+    #header .banner .carousel-item .carousel-caption h2 {
+      font-size: 28px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+h1, h2, h3, h4, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif; }
+
+.wrapper {
+  width: 100%; }
+
+
+
+#section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 47px;
+  width: 100%;
+  height: 100%; }
+  #section .content {
+    width: 760px;
+    margin-bottom: 53px; }
+    @media screen and (max-width: 1199px) {
+      #section .content {
+        width: 100%; } }
+    @media screen and (max-width: 767px) {
+      #section .content {
+        -ms-flex-align: center;
+            align-items: center;
+        margin: auto; } }
+    #section .content .featured h2,
+    #section .content .staff-pick h2,
+    #section .content .new-products h2 {
+      font-size: 24px;
+      color: #635f57;
+      text-transform: uppercase;
+      padding-bottom: 21px; }
+    #section .content .featured .col-md-4,
+    #section .content .staff-pick .col-md-4,
+    #section .content .new-products .col-md-4 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      #section .content .featured .col-md-4 .product,
+      #section .content .staff-pick .col-md-4 .product,
+      #section .content .new-products .col-md-4 .product {
+        width: 233px;
+        border: 2px solid #eeeeee;
+        border-radius: 2px;
+        padding: 8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative; }
+        #section .content .featured .col-md-4 .product:hover,
+        #section .content .staff-pick .col-md-4 .product:hover,
+        #section .content .new-products .col-md-4 .product:hover {
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+        #section .content .featured .col-md-4 .product .product-title,
+        #section .content .staff-pick .col-md-4 .product .product-title,
+        #section .content .new-products .col-md-4 .product .product-title {
+          position: relative; }
+          #section .content .featured .col-md-4 .product .product-title h4,
+          #section .content .staff-pick .col-md-4 .product .product-title h4,
+          #section .content .new-products .col-md-4 .product .product-title h4 {
+            font-size: 14px; }
+          #section .content .featured .col-md-4 .product .product-title h3,
+          #section .content .staff-pick .col-md-4 .product .product-title h3,
+          #section .content .new-products .col-md-4 .product .product-title h3 {
+            font-size: 18px;
+            color: #7db122;
+            margin-bottom: 15px; }
+            #section .content .featured .col-md-4 .product .product-title h3 s,
+            #section .content .staff-pick .col-md-4 .product .product-title h3 s,
+            #section .content .new-products .col-md-4 .product .product-title h3 s {
+              color: #000;
+              font-size: 14px;
+              padding-right: 5px; }
+          #section .content .featured .col-md-4 .product .product-title .btn-buy,
+          #section .content .staff-pick .col-md-4 .product .product-title .btn-buy,
+          #section .content .new-products .col-md-4 .product .product-title .btn-buy {
+            position: absolute;
+            top: 5px;
+            right: 5%;
+            font-size: 24px;
+            background: #7db122;
+            border-radius: 50%;
+            padding: 5px 10px;
+            color: #fff; }
+            #section .content .featured .col-md-4 .product .product-title .btn-buy:hover,
+            #section .content .staff-pick .col-md-4 .product .product-title .btn-buy:hover,
+            #section .content .new-products .col-md-4 .product .product-title .btn-buy:hover {
+              background: #4cb1ca; }
+        #section .content .featured .col-md-4 .product .new,
+        #section .content .staff-pick .col-md-4 .product .new,
+        #section .content .new-products .col-md-4 .product .new {
+          position: absolute;
+          top: -4px;
+          right: -2px; }
+        #section .content .featured .col-md-4 .product .sale,
+        #section .content .staff-pick .col-md-4 .product .sale,
+        #section .content .new-products .col-md-4 .product .sale {
+          position: absolute;
+          top: -4px;
+          left: -2px; }
+    #section .content .staff-pick h2,
+    #section .content .new-products h2 {
+      margin-top: 34px; }
+  #section .right {
+    width: 233px;
+    border-top: 4px solid #4cb1ca; }
+    @media screen and (max-width: 1199px) {
+      #section .right {
+        display: none; } }
+    #section .right .section-carousel {
+      border: 1px solid #eeeeee; }
+      #section .right .section-carousel .carousel-item {
+        padding: 13px; }
+      #section .right .section-carousel h2 {
+        text-align: center;
+        font-size: 24px;
+        color: #635f57;
+        padding: 30px 0 41px 0; }
+      #section .right .section-carousel .btn-hex {
+        background: #4cb1ca;
+        padding: 17px 26px;
+        color: #fff;
+        font-size: 14px; }
+        #section .right .section-carousel .btn-hex:hover {
+          text-decoration: none; }
+      #section .right .section-carousel .carousel-indicators {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 15px 0 15px 0;
+        border: 1px solid #eeeeee; }
+        #section .right .section-carousel .carousel-indicators li {
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          background: #4cb1ca;
+          margin-right: 5px;
+          margin-left: 5px; }
+        #section .right .section-carousel .carousel-indicators .active {
+          background: #7db122; }
