@@ -1,0 +1,691 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: #ececec;
+    min-width: 320px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.btn-red{
+    background: #d51e08;
+    color: #fff;
+}
+.btn-red:hover{
+    background: #ec4835;
+    color: #fff;
+}
+/*==================header=======================*/
+
+.menu-top .navbar{
+    margin-bottom: 0;
+    background: #fff;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: .3s;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    text-decoration: underline;
+}
+.navbar-default .navbar-nav > li > a.btn-red{
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 20px;
+    background: #d62e08;
+    text-align: left;
+}
+
+.navbar-default .navbar-nav > li > a.btn-red:hover{
+    text-decoration: none;
+    background: #ec4835;
+}
+.flag{
+    padding-right: 5px;
+    position: relative;
+    top: -1px;
+}
+.navbar-default .navbar-nav > li > a .glyphicon{
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.menu-top .container,
+.menu-top .navbar-collapse{
+    padding-left: 0;
+}
+
+.menu-carousel .item{
+    min-height: 600px;
+}
+.menu-carousel .bgslide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+/*Урок 2*/
+.carousel.fade{
+    opacity: 1;
+}
+.carousel.fade .item{
+    opacity: 0;
+    transition: 1s;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.carousel.fade .item.active{
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
+.menu-carousel .carousel-caption{
+    left: 0;
+    top: 170px;
+}
+.menu-carousel .carousel-caption h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+.menu-carousel .carousel-caption h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.menu-carousel .carousel-caption .btn-red{
+    padding: 20px 30px;
+    font-size: 24px;
+}
+.menu-carousel .container{
+    position: relative;
+}
+/*идём в медиа 1100, 992 и 768 уменьшаем размер шрифта carousel-caption*/
+
+.menu-carousel .carousel-control{
+    z-index: 3;/*смотрим в хроме и видем что для кнопки btn-red hover не работает, поэтому даём z-index:3*/
+}
+.carousel-indicators-wrap{
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    text-align: center;/*в конце*/
+}
+.carousel-indicators-wrap .carousel-indicators{
+    position: relative;
+    background: #fff;
+    width: auto;
+    display: inline-block;
+    margin-left: 0;
+    padding: 5px 18px;
+    border: 1px solid  #cfcfcf;
+    border-radius: 3px;
+    left: 0;/*в конце*/
+    bottom: 0;/*в конце*/
+}
+.carousel-indicators-wrap .carousel-indicators li{
+    background: #d2d2d2;
+    width: 10px;
+    height: 10px;
+    margin: 0 7px;
+}
+.carousel-indicators-wrap .carousel-indicators li.active{
+    background: #a3a3a3;
+}
+.main-menu .navbar-inverse{
+    background: transparent;
+    border: none;
+}
+.main-menu-bg{
+    background: #000;
+    border-radius: 3px;
+}
+.main-menu{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top: 30px;
+}
+.main-menu .navbar-inverse .navbar-nav > li > a{
+    color: #fff;
+    font-size: 16px;
+    transition: background .5s;
+}
+.menu-carousel .main-menu .navbar-brand img{
+    float: left;
+}
+.menu-carousel .main-menu .navbar-brand{/*без .menu-carousel будет гдето перебиваться*/
+    padding: 0;
+    margin-left: 30px;
+}
+.menu-carousel .main-menu .navbar-brand span{
+    display: inline-block;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    text-decoration: underline;
+}
+/*Урок 3*/
+
+.search{
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    line-height: 50px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 30;
+    display: none;
+}
+
+
+/*==================sidebar=======================*/
+
+
+.main-slogan{
+    background: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid  #cfcfcf;
+    border-bottom: 3px solid  #dadada;
+}
+.main-slogan h1{
+    font-size: 30px;
+    margin: 0;
+}
+
+.sidebar{
+    padding: 50px 0 10px 0;
+    border-right: 3px solid  #dadada;
+}
+.widget{
+    border-bottom: 3px solid #dadada;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.widget h3,
+.content h3{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.widget ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.widget ul li a{
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+}
+.widget ul li .more{
+    color: #358acd;
+}
+.sidebar .carousel{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.sidebar .sidebar-carousel-caption{
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    max-width: 225px;
+}
+.sidebar .sidebar-carousel-caption div{
+    padding: 20px;
+}
+.sidebar .sidebar-carousel-caption h4{
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+.sidebar .sidebar-carousel-caption p{
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #5b5b5b;
+}
+.sidebar .carousel-indicators{
+    background: #fff ;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 225px;
+    margin-left: 0;
+    padding: 10px 0;
+}
+.sidebar .carousel-indicators li{
+    background: #9a9a9a;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+.sidebar .carousel-indicators li.active{
+    background: #5b5b5b;
+}
+.sidebar .banner{
+    background: #fff;
+    margin-bottom: 40px;
+    max-width: 225px;
+}
+.sidebar .banner h3,
+.sidebar .banner h2{
+    text-transform: uppercase;
+    margin: 0;
+}
+.sidebar .banner h3{
+    font-size: 18px;
+}
+.sidebar .banner h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+.sidebar .banner a.btn-red{
+    padding: 5px 30px;
+    margin: 30px 0;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all .5s;
+}
+.sidebar .banner img{
+    margin-bottom: 35px;
+}
+.sidebar .banner a.btn-red:hover{
+    text-decoration: none;
+}
+.sidebar .about{
+    padding-right: 35px;
+}
+.sidebar .about h3{
+    margin-bottom: 25px;
+}
+.sidebar .about p{
+    color: #585858;
+    margin-bottom: 30px;
+}
+.sidebar .about span{
+    color: #0a94b2;
+}
+/*==================content=======================*/
+.content{
+    padding: 50px 0 70px;
+}
+.content h3{
+    padding-left: 15px;
+}
+.products-row{
+    margin-bottom: 40px;
+}
+.product{
+    background: #fff;
+    border: 1px solid  #c0c0c0;
+    padding: 25px 15px;
+    text-align: center;
+    position: relative;
+    height: 452px;
+    overflow: hidden;
+    transition: all .5s;
+}
+.product:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+    transform: scale(1.02);
+}
+.product:hover img{
+    opacity: .5;
+    transition: .5s;
+}
+.product-favorites{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #909090;
+    font-size: 20px;
+}
+.product-favorites span:hover{
+    cursor: pointer;
+    color: #666;
+}
+.product-favorites span:active{
+    color: red;
+}
+.product-img{
+    height: 200px;
+    width: 100%;
+}
+.product-title a{
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+.product-desc{
+    max-height: 60px;
+    overflow: hidden;
+}
+.product-price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #d51e08;
+    margin-bottom: 15px;
+}
+.product-buy{
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.product-buy .btn{
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+.product-buy .btn:hover{
+    background: #ececec;
+}
+.product-sale{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #d1d1d1;
+    line-height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+}
+.product-sale:hover{
+    background: rgba(0, 0, 0, .4);
+}
+.banner-row{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.banner-row img{
+    margin-bottom: 10px;
+}
+.bottom-content{
+    background: #f5f5f5;
+    padding: 45px 0;
+    border-bottom: 1px solid #9e9e9e;
+}
+.bottom-content h3{
+    font-weight: 400;
+    margin: 0;
+}
+.bottom-content h4{
+    font-weight: 300;
+    font-size: 18px;
+}
+.bottom-content .form-inline .form-control{
+    height: 50px;
+    width: 100%;
+}
+.bottom-content .form-inline .btn{
+    height: 50px;
+    background: #e77553;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 4px solid #d96340;
+    width: 100%;
+    transition: all .5s;
+}
+.bottom-content .form-inline .btn:hover{
+    background: #d96340;
+}
+
+.bottom-slider{
+    background: #fff;
+    padding: 35px 0;
+}
+.elastislide-wrapper{
+    box-shadow: none;
+}
+.elastislide-horizontal nav span{
+    left: 0;
+}
+.elastislide-horizontal nav span.elastislide-next{
+    right: 0;
+}
+.elastislide-wrapper nav span{
+    background: #ddd url(../img/nav.png) no-repeat 4px 3px;
+}
+
+/*=============================footer===========================*/
+.footer-menu{
+    background: #343434;
+    padding: 30px 0;
+}
+.footer-menu h5{
+    color: #c8c8c8;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-menu ul li a{
+    color: #c8c8c8;
+    line-height: 22px;
+}
+.footer-copyright{
+    background: #fff;
+    padding: 25px 0;
+}
+/*===================== Медиа запросы - начало =====================*/
+
+@media only screen and (max-width: 1200px) {
+.menu-top .navbar-nav{
+    float: none !important;
+}
+.main-menu .navbar-form{
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    display: none;
+}
+.search{
+    display: block;
+}
+ /* menu change braikpoint */
+    .menu-top .navbar-toggle {
+        display: block;
+    }
+    .menu-top .navbar-header {
+        float: none;
+    }
+    .menu-top .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .menu-top .collapse.in{
+        display:block !important;
+    }
+     .menu-top .container{
+        width: 100%;
+    }
+    .menu-top .navbar-nav>li {
+        float: none;
+    }
+    .menu-top .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /*урок 3*/
+      .sidebar .carousel,
+      .sidebar .banner{
+        margin-right: 10px;
+    }
+    .social-icons img{
+        display: block;
+        margin-bottom: 3px;
+    }
+
+}
+@media only screen and (max-width: 1100px) {
+    .menu-carousel .carousel-caption{
+        left: 8%;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+.menu-carousel .carousel-caption{
+        left: 20%;
+}
+    .menu-carousel .carousel-caption h1{
+        font-size: 40px;
+}
+    .menu-carousel .carousel-caption h3{
+        font-size: 22px;
+}
+    .menu-carousel .carousel-caption .btn-red{
+        font-size: 18px;
+}
+    .main-menu .navbar-inverse .navbar-nav > li > a{
+        font-size: 14px;
+}
+/*Урок 3*/
+    .sidebar{
+        padding-bottom: 0;
+        padding-top: 0;
+        border-right: none;
+    }
+    .sidebar .carousel,
+    .sidebar .banner{
+        margin-right: 0;
+}
+    .sidebar .about{
+        padding-right: 0;
+    }
+    /*Урок 4*/
+    .bottom-content .form-inline{
+        margin-top: 20px;
+    }
+    .footer-menu ul li a{
+        display: block;
+    }
+    .social-icons img{
+        display: inline;
+        margin-bottom: 0;
+    }
+    .pay{
+        text-align: left;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+.navbar-default .navbar-nav > li > a:hover{
+    background: #eee;
+  }
+.menu-top .container,
+.menu-top .navbar-collapse{
+    padding-left: 15px;
+}
+.menu-carousel .carousel-caption .btn-red{
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+.menu-carousel .carousel-caption h1{
+    font-size: 38px;
+}
+.menu-carousel .carousel-caption h3{
+    font-size: 20px;
+}
+.menu-carousel .carousel-caption .btn-red{
+    padding: 15px 20px;
+    font-size: 16px;
+}
+.main-menu .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-menu .navbar-inverse .navbar-nav > li > a:hover{
+    text-decoration: none;
+    background: #222;
+}
+.main-menu .navbar-form{
+    margin: 8px 0;
+}
+.main-menu .navbar-brand img{
+    max-height: 50px;
+}
+.main-menu .navbar-toggle.collapsed +.navbar-brand img{
+    max-height: none;
+    position: relative;
+    z-index: 2;
+}
+.search{
+    display: none;
+}
+.main-menu .navbar-form{
+    display: block !important;
+    position: relative;
+    right: 0;
+    top: 0;
+    background: transparent;
+}
+.content{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.products-row{
+    margin: 20px 0;
+}
+.product{
+    margin-bottom: 15px;
+}
+}
+
+@media only screen and (max-width: 540px) {
+.sidebar .col-xs-6{
+    width: 100%;
+}
+  .sidebar .carousel,
+  .sidebar .banner{
+    display: inline-block;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+.menu-carousel .carousel-caption .btn-red {
+    font-size: 14px;
+}
+.main-menu .navbar-toggle.collapsed +.navbar-brand img{
+    max-height: 80px;
+}
+    .bottom-content{
+        padding: 25px 0;
+    }
+}
+@media only screen and (min-width : 1200px) {
+.main-menu .navbar-form{
+        display: block !important;
+    }
+}
