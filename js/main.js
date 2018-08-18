@@ -39,4 +39,7 @@ $(window).scroll(function () {
         }
     });
 }).trigger('scroll');
+$(".burger-menu").click(function () {
+    $(this).toggleClass("menu-on");
+});
 new WOW().init();
